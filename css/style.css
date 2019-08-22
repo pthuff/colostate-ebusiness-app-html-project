@@ -1,0 +1,262 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+/*
+    Homework Excercise HTML and CSS Assignment
+    Author: Paul Huff
+    Date 02/01/2019
+*/
+
+/*Clear margins and padding*/
+html, body, div, h1, h2, h3, p, a, em, small, b, u, i, dl, dt, dd, ul, li, table, tr, th, td, footer, header, menu, nav, section 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Body styles*/
+footer, header, menu, nav, section 
+{
+	display:block;
+}
+table 
+{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img 
+{
+    border: 0;
+    max-width: 100%;
+}
+body 
+{
+	font-family:"Open Sans", sans-serif;
+	font-size:13px;
+	line-height:22px;
+	color:#444444;
+	padding:0;
+}
+a, a:link 
+{
+    color: #eb381b;
+    text-decoration: none;
+}
+a:hover 
+{
+	color:#000;
+}
+p 
+{
+	margin-bottom:10px;
+}
+h1 
+{
+    font-size: 30px;
+    line-height: 1.7em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+h2 
+{
+    line-height: 1.3em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+h3 
+{
+    font-size: 22px;
+    line-height: 1.3em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+::selection 
+{
+    color: #eb381b;
+}
+
+/*Header and nav*/
+header 
+{
+	margin-top:0;
+	width:100%;
+	height:45px;
+	margin-bottom:40px;
+	background:#1D1D1D;
+	position:fixed;
+	z-index:999;
+}
+header .main-nav 
+{
+	margin-top:10px;
+    text-align: center;
+}
+header .main-nav li 
+{
+	display:inline-block;
+	margin-right:40px;
+	list-style:none;
+}
+header .main-nav li a 
+{
+	color:#FFF;
+	font-size:10px;
+	text-transform:uppercase;
+	font-weight:600;
+	letter-spacing:2px;
+}
+header .main-nav li a:hover, header .main-nav li a.active 
+{
+	color:#666;
+}
+
+/*Header title other pages*/
+#home-head 
+{
+	content:"";
+	display:block;
+	min-height:200px;
+	width:100%;
+	text-align:center;
+	box-shadow:inset 0 -1px 5px rgba(0,0,0,0.6);
+}
+#home-head h1 
+{
+	font-size:34px;
+	color:#fff;
+	line-height:0.879em;
+	text-shadow: 2px 2px 3px #000000;
+	text-transform:uppercase;
+	padding-top:100px;
+}
+
+/*Header title home (index) page*/
+#index 
+{
+    content: "";
+    display: block;
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+    box-shadow: inset 0 -1px 5px rgba(0,0,0,0.6);
+}
+#index h1 
+{
+    font-size: 64px;
+    color: #fff;
+    line-height: 0.879em;
+    text-shadow: 2px 2px 3px #000000;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 120px;
+}
+#index h2 
+{
+    font-size: 13px;
+    color: #FFF;
+    line-height: 1em;
+    text-shadow: 2px 2px 3px #000000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*Header images*/
+.home 
+{
+	background: url("../images/header1.jpg");
+	background-size: cover;
+}
+.menu 
+{
+	background: url("../images/header2.jpg");
+	background-size: cover;
+}
+.about 
+{
+	background: url("../images/header3.jpg");
+	background-size: cover;
+}
+
+/*Main content style*/
+#main-content 
+{
+    margin: 0 auto;
+    max-width: 950px;
+}
+#main-content .text-intro 
+{
+	border-bottom:1px solid #e5e4e4;
+	float:left;
+	width:100%;
+	padding:25px 0;
+	margin-bottom:40px;
+}
+#main-content .text-intro h2 
+{
+	font-size:40px;
+	color:#606060;
+	text-align:center;
+}
+#main-content th 
+{
+    text-align: right;
+    padding-right: 8px;
+}
+#main-content td 
+{
+    text-align: left;
+    padding-left: 8px;
+}
+
+/*Columns style (I copied this from the web and modified it. I couldn't figure out how to space columns.)*/
+div.columns 
+{
+	height:1%;
+}
+div.solo 
+{
+    width: 75%;
+    margin: 0 auto;
+}
+div.one-half 
+{
+	width:48.5%;
+}
+div.one-third 
+{
+	width:31.3%;
+}
+div.two-third 
+{
+	width:65.64%;
+}
+div.one-fourth 
+{
+	width:22.7%;
+}
+div.three-fourth 
+{
+	width:74.23%;
+}
+div.one-half, div.one-third, div.two-third, div.three-fourth, div.one-fourth 
+{
+	position:relative;
+	margin-left:3%;
+	float:left;
+	margin-bottom:1.55em;
+}
+div.one-half:first-child, div.one-third:first-child, div.two-third:first-child, div.three-fourth:first-child, div.one-fourth:first-child, .first 
+{
+	margin-left:0px !important;
+	clear:left;
+}
+
+/*Footer*/
+footer 
+{
+    clear: both;
+    border-top: 1px solid #e5e4e4;
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 950px;
+    text-align: center;
+}
